@@ -1,0 +1,3 @@
+{
+    "run_list": [ "recipe[usability]", "recipe[usability::zsh]" ]
+}

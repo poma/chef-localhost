@@ -1,0 +1,3 @@
+[submodule "cookbooks/usability"]
+	path = cookbooks/usability
+	url = git@github.com:poma/chef-usability.git
