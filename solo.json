@@ -1,3 +1,10 @@
 {
-    "run_list": [ "recipe[usability]", "recipe[usability::zsh]", "recipe[usability::ssh-key]" ]
+    "run_list": [ "recipe[usability]", "recipe[usability::zsh]", "recipe[usability::ssh-key]", "recipe[usability::wrun]" ],
+
+    "usability": {
+        "zsh" : {
+            "plugins" : "git zsh-autosuggestions zsh-syntax-highlighting command-not-found vagrant wd",
+            "includes" : [ "/opt/oh-my-zsh/custom/wrun-auto.sh" ]
+        }
+    }
 }
